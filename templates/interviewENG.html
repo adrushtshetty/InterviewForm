@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Forms / Elements - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/images/favicon.png" rel="icon">
+  <link href="static/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="static/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.5.0
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="/home" class="logo d-flex align-items-center">
+        <img src="static/images/image1.jpg" alt="">
+        <span class="d-none d-lg-block">Interview Forms </span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+
+
+        </li><!-- End Notification Nav -->
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="static/images/profile-img.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Avinash Shetty</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Avinash Shetty</h6>
+              <span>Chief Engineer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+<!--            Account Editing Options & Profile-->
+
+
+
+<!--            <li>-->
+<!--              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">-->
+<!--                <i class="bi bi-person"></i>-->
+<!--                <span>My Profile</span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <hr class="dropdown-divider">-->
+<!--            </li>-->
+
+<!--            <li>-->
+<!--              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">-->
+<!--                <i class="bi bi-gear"></i>-->
+<!--                <span>Account Settings</span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <hr class="dropdown-divider">-->
+<!--            </li>-->
+
+<!--            End of account editing options-->
+
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="/">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="#">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Interview Forms Andromeda </span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="/interview_form">
+              <i class="bi bi-circle"></i><span>Interview Form</span>
+            </a>
+          </li>
+            <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>F-IMS-160 Editor</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Interview Form For EO</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="/eo_form">
+              <i class="bi bi-circle"></i><span>EO Form</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/u/6/?tgif=d">
+          <i class="bi bi-bar-chart"></i><span>Google Form</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>F-IMS-160 Editor</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/home">Home</a></li>
+          <li class="breadcrumb-item">Interview Forms Andromeda
+</li>
+          <li class="breadcrumb-item active">F-IMS-160 Editor</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Editor</h5>
+
+              <!-- General Form Elements -->
+              <form action="{{ url_for('enter')}}" method="post" >
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>Name Of Candidate</b></label>
+                  <div class="col-sm-10">
+                    <input type="text" name="Name" class="form-control">
+                  </div>
+                </div>
+                <label for="inputText" class="col-form-label"><b>Department</b></label>
+                <div style="margin-left:10%">
+                      <label>
+                          <input type="radio" name="Department" value="Engine" />
+                          <span>Engine</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="Department" value="Deck"/>
+                          <span>Deck</span>
+                      </label>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>Rank</b></label>
+                  <div class="box" style="margin-bottom:15px;margin-left:10%">
+                      <select name="Rank">
+                          <option selected disabled>Select Rank</option>
+                        <option value="Master">Master</option>
+                        <option value="Chief Officer">Chief Officer</option>
+                        <option value="Second Officer">Second Officer</option>
+                        <option value="Third Officer">Third Officer</option>
+                        <option value="Chief Engineer">Chief Engineer</option>
+                          <option value="Second Engineer">Second Engineer</option>
+                          <option value="Third Engineer">Third Engineer</option>
+                          <option value="Fourth Engineer">Fourth Engineer</option>
+                          <option value="Electrical Officer">Electrical Officer</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputDate" class="col-form-label"><b>Date</b></label>
+                  <div class="col-sm-10">
+                    <input type="date" name="Date" class="form-control">
+                  </div>
+                </div>
+                <label for="inputText" class="col-form-label"><b>Age Criteria</b></label>
+                <p>Age greater than 25 & lesser than 60</p>
+                <div style="margin-left:10%">
+                      <label>
+                          <input type="radio" name="Age" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="Age" value="No"/>
+                          <span>No</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="Age" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                </div>
+                <label for="inputText" class="col-form-label"><b>Rank Experience</b></label>
+                <p>Rank experience greater than 12 months</p>
+                <div style="margin-left:10%">
+                      <label>
+                          <input type="radio" name="RankXP" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="RankXP" value="No"/>
+                          <span>No</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="RankXP" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                </div>
+                <div class="row mb-3">
+                <label for="inputText" class="col-form-label"><b>Vessel Experience</b></label>
+                <div style="margin-left:10%">
+                      <label>
+                          <input type="radio" name="VesselXP" value="Both Crude & Product" />
+                          <span>Both Crude & Product</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="VesselXP" value="Mostly Crude"/>
+                          <span>Mostly Crude</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="VesselXP" value="Mostly Product"/>
+                          <span>Mostly Product</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="VesselXP" value="None"/>
+                          <span>None</span>
+                      </label>
+                </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>CES > 60%</b></label>
+                  <div class="col-sm-10">
+                    <input type="text" name="CES" class="form-control">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>Previous Sea Experience</b></label>
+                  <div class="col-sm-10" style="margin-left:10%">
+<!--                    <input type="number" class="form-control">-->
+                    <div >
+                    <label for="inputText" class="col-form-label">Experience on tankers (months)</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="EXPtanker" class="form-control">
+                    </div>
+                      </div>
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Experience operating in ice conditions/subzero</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="IceCond" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="IceCond" value="No"/>
+                          <span>No</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="IceCond" value="As junior only"/>
+                          <span>As junior only</span>
+                      </label>
+                      </div>
+                      <div style="margin-top:3%">
+                      <label for="inputText" class="col-form-label">Fourth Engineer rank experience (months)</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="Fourth" class="form-control">
+                    </div>
+                        </div>
+                      <div style="margin-top:3%">
+                      <label for="inputText" class="col-form-label">Third Engineer rank experience (months)</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="Third" class="form-control">
+                    </div>
+                        </div>
+                      <div style="margin-top:3%">
+                      <label for="inputText" class="col-form-label">Second Engineer rank experience (months)</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="Second" class="form-control">
+                    </div>
+                        </div>
+                      <div style="margin-top:3%">
+                      <label for="inputText" class="col-form-label">Chief Engineer rank experience (months)</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="Chief" class="form-control">
+                    </div>
+                        </div>
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>Watchkeeping</label>
+                  <div class="col-sm-10" style="margin-left:10%">
+<!--                    <input type="number" class="form-control">-->
+<!--                    <div >-->
+<!--                    <label for="inputText" class="col-form-label">Engine Room</label>-->
+<!--                    <div class="col-sm-10">-->
+<!--                      <input type="text" name="EXPtanker" class="form-control">-->
+<!--                    </div>-->
+<!--                      </div>-->
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Engine Room</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="engineRoom" value="Extra Junior" />
+                          <span>Extra Junior</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="engineRoom" value="Extra Senior"/>
+                          <span>Extra Senior</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="engineRoom" value="Manned"/>
+                          <span>Manned</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="engineRoom" value="Unmanned"/>
+                          <span>Unmanned</span>
+                      </label>
+                      </div>
+                    </div>
+                      <div style="margin-top:3%">
+                          <label for="inputText" class="col-form-label">Operated following equipment independently</label>
+
+
+    <!--                  <label class="col-sm-2 col-form-label">Select</label>-->
+                        <div style="margin-left:5%">
+                          <div class="col-sm-10">
+                            <select name="H17">
+                                  <option selected disabled>Select Equipment</option>
+                                <option value="Oily Water Seperator">Oily Water Seperator</option>
+                                <option value="GMDSS Console">GMDSS Console</option>
+                                <option value="None">None</option>
+                              </select>
+                            </div>
+                        <div class="col-sm-10" style="margin-top:2%">
+                            <select name="I17">
+                                  <option selected disabled>Select Equipment</option>
+                                <option value="Emg. Gen. On Load">Emg. Gen. On Load</option>
+                                <option value="BA Compressor">BA Compressor</option>
+                                <option value="None">None</option>
+                              </select>
+                          </div>
+                        <div class="col-sm-10"  style="margin-top:2%">
+                            <select name="I17">
+                                  <option selected disabled>Select Equipment</option>
+                                <option value="Emg. M/E Manouvering">Emg. M/E Manouvering</option>
+                                <option value="Loadicator">Loadicator</option>
+                                <option value="None">None</option>
+                              </select>
+                        </div>
+                          </div>
+                      </div>
+                      <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Any Major Break Down or Critical Situation</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="E18" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="E18" value="No"/>
+                          <span></span>No</span>
+                      </label>
+                      </div>
+                    </div>
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Description & Understanding</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="H18" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H18" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H18" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H18" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Explanation</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="J18" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J18" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J18" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J18" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Carried out major overhoaul </label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="D19" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D19" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D19" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D19" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Critical Equipment & Spares</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="G19" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="G19" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="G19" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="G19" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">PMS</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="I19" value="Fully" />
+                          <span>Fully</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="I19" value="Partial"/>
+                          <span>Partial</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="I19" value="Program"/>
+                          <span>Program</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="I19" value="Paper"/>
+                          <span>Paper</span>
+                      </label>
+                      </div>
+                      <div class="col-sm-10" style="margin-top:3%">
+                      <label>
+                          <input type="radio" name="J19" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J19" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J19" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J19" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+<!--                      <div style="margin-top:3%">-->
+<!--                      <label for="inputText" class="col-form-label">Third Engineer rank experience (months)</label>-->
+<!--                    <div class="col-sm-10">-->
+<!--                      <input type="text" name="Third" class="form-control">-->
+<!--                    </div>-->
+<!--                        </div>-->
+<!--                      <div style="margin-top:3%">-->
+<!--                      <label for="inputText" class="col-form-label">Second Engineer rank experience (months)</label>-->
+<!--                    <div class="col-sm-10">-->
+<!--                      <input type="text" name="Second" class="form-control">-->
+<!--                    </div>-->
+<!--                        </div>-->
+<!--                      <div style="margin-top:3%">-->
+<!--                      <label for="inputText" class="col-form-label">Chief Engineer rank experience (months)</label>-->
+<!--                    <div class="col-sm-10">-->
+<!--                      <input type="text" name="Chief" class="form-control">-->
+<!--                    </div>-->
+<!--                        </div>-->
+
+
+
+
+
+
+
+                    </div>
+
+                  </div>
+
+
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>Enginer & System</label>
+                  <div class="col-sm-10" style="margin-left:10%">
+<!--                    <input type="number" class="form-control">-->
+<!--                    <div >-->
+<!--                    <label for="inputText" class="col-form-label">Engine Room</label>-->
+<!--                    <div class="col-sm-10">-->
+<!--                      <input type="text" name="EXPtanker" class="form-control">-->
+<!--                    </div>-->
+<!--                      </div>-->
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">COP</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="D21" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D21" value="More"/>
+                          <span>More</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D21" value="Less"/>
+                          <span>Less</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D21" value="No"/>
+                          <span>No</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">FRAMO</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="F21" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F21" value="More"/>
+                          <span>More</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F21" value="Less"/>
+                          <span>Less</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F21" value="No"/>
+                          <span>No</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Heating</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="H21" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H21" value="More"/>
+                          <span>More</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H21" value="Less"/>
+                          <span>Less</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H21" value="No"/>
+                          <span>No</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">IG System</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="J21" value="Boiler Uptake" />
+                          <span>Boiler Uptake</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J21" value="IGG"/>
+                          <span>IGG</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J21" value="Both"/>
+                          <span>Both</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J21" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                      <label for="inputText" class="col-form-label"><b>Types</b></label>
+                    <label for="inputText" class="col-form-label">EGCS</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="D22" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D22" value="More"/>
+                          <span>More</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D22" value="Less"/>
+                          <span>Less</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D22" value="No"/>
+                          <span>No</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+
+                    <label for="inputText" class="col-form-label">BWTS</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="F22" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F22" value="More"/>
+                          <span>More</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F22" value="Less"/>
+                          <span>Less</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F22" value="No"/>
+                          <span>No</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+
+                    <label for="inputText" class="col-form-label">IG</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="H22" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H22" value="More"/>
+                          <span>More</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H22" value="Less"/>
+                          <span>Less</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H22" value="No"/>
+                          <span>No</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+
+                    <label for="inputText" class="col-form-label">Knowledge</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="J22" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J22" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J22" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J22" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+
+                    <div style="margin-top:3%">
+                      <label for="inputText" class="col-form-label"><b>Knowledge On</b></label>
+                    <label for="inputText" class="col-form-label">Boiler</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="D23" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D23" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D23" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D23" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Generator</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="F23" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F23" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F23" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F23" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Procedures</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="H23" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H23" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H23" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H23" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Ship to Ship </label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="J23" value="Never" />
+                          <span>Never</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J23" value="Few(<5)"/>
+                          <span>Few(<5)</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J23" value="Many"/>
+                          <span>Many</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J23" value="As Junior Only"/>
+                          <span>As Junior Only</span>
+                      </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>Operational Std.</label>
+                  <div class="col-sm-10" style="margin-left:10%">
+<!--                    <input type="number" class="form-control">-->
+<!--                    <div >-->
+<!--                    <label for="inputText" class="col-form-label">Engine Room</label>-->
+<!--                    <div class="col-sm-10">-->
+<!--                      <input type="text" name="EXPtanker" class="form-control">-->
+<!--                    </div>-->
+<!--                      </div>-->
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Tank Entry</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="D25" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D25" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D25" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D25" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Gas Meters</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="F25" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F25" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F25" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F25" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Alarms</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="H25" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H25" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H25" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H25" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">OWS</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="J25" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J25" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J25" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J25" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Risk Assessment</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="D26" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D26" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D26" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D26" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Work & Rest Hours</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="F26" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F26" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F26" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F26" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">PMS</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="H26" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H26" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H26" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H26" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Record Keeping</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="J26" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J26" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J26" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J26" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>Inspections</label>
+                  <div class="col-sm-10" style="margin-left:10%">
+<!--                    <input type="number" class="form-control">-->
+<!--                    <div >-->
+<!--                    <label for="inputText" class="col-form-label">Engine Room</label>-->
+<!--                    <div class="col-sm-10">-->
+<!--                      <input type="text" name="EXPtanker" class="form-control">-->
+<!--                    </div>-->
+<!--                      </div>-->
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">PSC</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="D28" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D28" value="No"/>
+                          <span>No</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D28" value="As junior only"/>
+                          <span>As junior only</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">USCG</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="F28" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F28" value="No"/>
+                          <span>No</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F28" value="As junior only"/>
+                          <span>As junior only</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">AMSA</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="H28" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H28" value="No"/>
+                          <span>No</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H28" value="As junior only"/>
+                          <span>As junior only</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">FLAG</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="J28" value="Yes" />
+                          <span>Yes</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J28" value="No"/>
+                          <span>No</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J28" value="As junior only"/>
+                          <span>As junior only</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Vetting Experience No.</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="D29" class="form-control">
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Preparation</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="F29" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F29" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F29" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F29" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Knowledge</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="H29" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H29" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H29" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H29" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">ISO 9/14/45</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="J29" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J29" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J29" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J29" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>Human Resource</label>
+                  <div class="col-sm-10" style="margin-left:10%">
+<!--                    <input type="number" class="form-control">-->
+<!--                    <div >-->
+<!--                    <label for="inputText" class="col-form-label">Engine Room</label>-->
+<!--                    <div class="col-sm-10">-->
+<!--                      <input type="text" name="EXPtanker" class="form-control">-->
+<!--                    </div>-->
+<!--                      </div>-->
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Officers</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="D31" value="Multinational" />
+                          <span>Multinational</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D31" value="Indian Only"/>
+                          <span>Indian Only</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D31" value="Asian"/>
+                          <span>Asian</span>
+                      </label>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Ratings</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="F31" value="Multinational" />
+                          <span>Multinational</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F31" value="Indian Only"/>
+                          <span>Indian Only</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="F31" value="Asian"/>
+                          <span>Asian</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Training</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="H31" value="Good" >
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H31" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H31" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="H31" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+
+
+                    <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Confidence</label>
+                    <div class="col-sm-10">
+                      <label>
+                          <input type="radio" name="J31" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J31" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J31" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="J31" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row mb-3">
+                  <label for="inputText" class="col-form-label"><b>Interviewed By</b></label>
+                  <div class="box" style="margin-bottom:15px;margin-left:10%">
+                      <select name="C33">
+                          <option selected disabled>Select</option>
+                        <option value="Quality">Quality</option>
+                        <option value="Training">Training</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Crewing">Crewing</option>
+                      </select>
+                    </div>
+                  <div class="box" style="margin-bottom:15px;margin-left:10%">
+                      <select name="D33">
+                          <option selected disabled>Select</option>
+                        <option value="Mrs. Babita">Mrs. Babita</option>
+                        <option value="Bhatia">Bhatia</option>
+                        <option value="Capt. Sanket Mahajan">Capt. Sanket Mahajan</option>
+                        <option value="Mr. Vaneet Abrol">Mr. Vaneet Abrol</option>
+                        <option value="Mr. Avinash Shetty">Mr. Avinash Shetty</option>
+                      </select>
+                    </div>
+                  <div class="box" style="margin-bottom:15px;margin-left:10%">
+                      <select name="G33">
+                          <option selected disabled>Select</option>
+                        <option value="Quality">Quality</option>
+                        <option value="Training">Training</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Crewing">Crewing</option>
+                      </select>
+                    </div>
+                  <div class="box" style="margin-bottom:15px;margin-left:10%">
+                      <select name="H33">
+                          <option selected disabled>Select</option>
+                        <option value="Mrs. Babita">Mrs. Babita</option>
+                        <option value="Bhatia">Bhatia</option>
+                        <option value="Capt. Sanket Mahajan">Capt. Sanket Mahajan</option>
+                        <option value="Mr. Vaneet Abrol">Mr. Vaneet Abrol</option>
+                        <option value="Mr. Avinash Shetty">Mr. Avinash Shetty</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                  <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Overall Rating</label>
+                    <div class="col-sm-10">
+                       <label>
+                          <input type="radio" name="D8" value="Very Good" />
+                          <span>Very Good</span>
+                      </label>
+                       <label>
+                          <input type="radio" name="D8" value="Excellent" />
+                          <span>Excellent</span>
+                      </label>
+
+                      <label>
+                          <input type="radio" name="D8" value="Good" />
+                          <span>Good</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D8" value="Fair"/>
+                          <span>Fair</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D8" value="Poor"/>
+                          <span>Poor</span>
+                      </label>
+                      <label>
+                          <input type="radio" name="D8" value="NA"/>
+                          <span>NA</span>
+                      </label>
+                      </div>
+                </div>
+
+                   <div class="row mb-3">
+                  <div style="margin-top:3%">
+                    <label for="inputText" class="col-form-label">Overall Rating</label>
+                    <div class="col-sm-10">
+                       <label>
+                          <input type="radio" name="F8" value="APPROVED" />
+                          <span>APPROVED</span>
+                      </label>
+                       <label>
+                          <input type="radio" name="F8" value="NOT APPROVED" />
+                          <span>NOT APPROVED</span>
+                      </label>
+                      </div>
+
+
+                </div>
+                       <div class="row mb-3" style="margin-top:3%">
+                  <label for="inputText" class="col-form-label"><b>Remarks</b></label>
+                           <p>His performance during the interview was fair and he can be considered for employment.</p>
+                  <div class="col-sm-10">
+                    <input type="text" name="F8" class="form-control">
+                  </div>
+                </div>
+<!--                      <div class="row mb-3" style="margin-top:2%">-->
+<!--                          -->
+<!--                          <input type="text" name="CES" class="form-control">-->
+<!--                     <div class="card">-->
+<!--            <div class="card-body">-->
+<!--              <h5 class="card-title">Remarks</h5>-->
+
+<!--              &lt;!&ndash; Quill Editor Default &ndash;&gt;-->
+<!--              <div class="quill-editor-default">-->
+
+
+<!--  mostly            </div>-->
+              <!-- End Quill Editor Default -->
+
+            </div>
+          </div>
+                      </div>
+                     <button style="margin-left:10%;margin-bottom:5%" type="submit" class="btn btn-main-2 btn-round-full btn-icon" >Submit</button>
+
+              </form><!-- End General Form Elements -->
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+<!--          -->
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Interview Forms</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by Adrusht Shetty</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/chart.js/chart.umd.js"></script>
+  <script src="static/vendor/echarts/echarts.min.js"></script>
+  <script src="static/vendor/quill/quill.min.js"></script>
+  <script src="static/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="static/vendor/tinymce/tinymce.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
